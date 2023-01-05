@@ -5,6 +5,11 @@
 from PIL import Image
 import os
 
+#set the working directory
+lien = r'C:\test'
+os.chdir(lien)
+
+#name should be the same for R and V file - eg. 0_R.jpg / 0_V.jpg
 for f in os.listdir('.'):
     if f.endswith('R.png'):
         i = Image.open(f)
